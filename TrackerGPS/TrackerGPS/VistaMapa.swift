@@ -77,6 +77,7 @@ class VistaMapa: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
             self.navigationController?.popViewController(animated: true)
         default:
             print("Fallo de ventana")
+            self.navigationController?.popToRootViewController(animated: true)
         }
         
     }
@@ -87,10 +88,20 @@ class VistaMapa: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
         addAnotations()
         if ventana != "Marchando"{
             toolbar.isHidden = true
+        } else {
+            //toolbar.setBackgroundImage(UIImage(), forToolbarPosition: .any, barMetrics: .default)
+            //toolbar.setShadowImage(UIImage(), forToolbarPosition: .any)
+            toolbar.isTranslucent = true
         }
         //centrar mapa en el primer punto
-        mapView.region.center = CLLocationCoordinate2D(latitude: recorrido.localizaciones[0].latitude, longitude: recorrido.localizaciones[0].longitude)
-        mapView.region.span = MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04)
+        if recorrido.localizaciones.count >= 1 {
+            mapView.region.center = CLLocationCoordinate2D(latitude: recorrido.localizaciones[0].latitude, longitude: recorrido.localizaciones[0].longitude)
+            mapView.region.span = MKCoordinateSpan(latitudeDelta: 0.04, longitudeDelta: 0.04)
+        }else{
+            toolbar.isHidden = true
+            ventana = "fallo"
+            showToast(message: "Información insuficiente")
+        }
         
         
     }
