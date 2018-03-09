@@ -1,4 +1,5 @@
-##Recursos usados
+
+# Recursos usados
 
 ![alt text](https://github.com/inakicl/TrackerGPS/blob/master/Recursos%20usados/appIconV1.png)
 ![alt text](https://github.com/inakicl/TrackerGPS/blob/master/Recursos%20usados/botonElegir.png)

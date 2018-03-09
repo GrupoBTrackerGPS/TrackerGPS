@@ -9,14 +9,14 @@ Es una aplicación que permite seleccionar una actividad (caminar, correr, andar
 
 Poder visualizar el historico con nuestros recorridos.
 
-##¿Qué va a hacer la aplicación?:
+## ¿Qué va a hacer la aplicación?:
 * Grabar recorridos.
 * Mostrar el recorrido realizado en un mapa.
 * Guardar o desechar el recorrido realizado.
 * Tener un historial donde poder ver los recorridos realizados.
 * Hacer uso de Firebase/Firestore en el tema de registros anónimos por cada teléfono y guardado de datos de los recorridos.
 
-##¿Qué no va a hacer la aplicación?:
+## ¿Qué no va a hacer la aplicación?:
 * Visualización en tiempo real del recorrido mientras se realiza.
 * No se tiene en cuentas normas de circulación ni similares.
 * No hace uso de sistema Usuario Contraseña, ya que se simplifica con el anónimo.
