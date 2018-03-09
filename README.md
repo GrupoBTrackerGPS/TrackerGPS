@@ -3,8 +3,16 @@
 [![Versión de Xcode](https://img.shields.io/badge/Xcode-9.2-3cacfa.svg)](https://developer.apple.com/xcode/)
 [![Versión de Swift](https://img.shields.io/badge/Swift-4.0-f05339.svg)](https://developer.apple.com/swift/)
 
-![alt text](https://github.com/inakicl/TrackerGPS/blob/master/screenshot-1.png "Launch Screen")
-![alt text](https://github.com/inakicl/TrackerGPS/blob/master/screenshot-2.png "First page")
+<table>
+  <tr>
+    <th>
+      <img src="https://github.com/inakicl/TrackerGPS/blob/master/screenshot-1.png" width="220"/>
+    </th>
+    <th>
+       <img src="https://github.com/inakicl/TrackerGPS/blob/master/screenshot-2.png" width="220"/>
+    </th>    
+  </tr>
+</table>
 
 Grupo B [TRACKER GPS] 
 
